@@ -4,7 +4,7 @@ pipeline{
         maven 'maven3.9'
     }
     stages{
-        stage("Cloning Repository"){
+        stage("Cloning Repository From Github"){
             steps{
                 echo "Cloning repository"
                 echo "Cloning repository completed"
@@ -12,7 +12,7 @@ pipeline{
         }
         stage("Building"){
             steps{
-                echo "Building package"
+                echo "Building package using mvn"
                 echo "Building package completed"
             }
         }
